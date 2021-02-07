@@ -17,14 +17,17 @@ class MapViewController: UIViewController {
         // stuff
         super.viewDidLoad()
         
-        // Center the map on Old Lyme with a 6 mile radius
+        //google maps pin 'what's this'
+        // lolHS 41.318774,-72.3271857
         
-        let initialLocation = CLLocation(latitude: 41.3159, longitude: -72.3290) // OLD LYME!!!
-
+        let initialLocation = CLLocation(latitude: 41.318774, longitude: -72.3262000) // OLD LYME!!!
+      
+        // Center the map on Old Lyme with a 6 mile radius
+        // 10,000 is townlevel 1,000 is zoomed
         let coordinateRegion = MKCoordinateRegion(
           center: initialLocation.coordinate,
-          latitudinalMeters: 10000,
-          longitudinalMeters: 10000)
+          latitudinalMeters:500,
+          longitudinalMeters: 500)
         
         mapView.setRegion(coordinateRegion, animated: true)
         
