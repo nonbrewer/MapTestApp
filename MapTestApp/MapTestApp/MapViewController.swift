@@ -24,8 +24,8 @@ class MapViewController: UIViewController {
         // 10,000 is townlevel 1,000 is zoomed
         let coordinateRegion = MKCoordinateRegion(
           center: initialLocation.coordinate,
-          latitudinalMeters:1000,
-          longitudinalMeters: 1000)
+          latitudinalMeters:10000,
+          longitudinalMeters: 10000)
         
         mapView.setRegion(coordinateRegion, animated: true)
         
